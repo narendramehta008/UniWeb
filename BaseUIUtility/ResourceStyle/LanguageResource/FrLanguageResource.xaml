@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:BaseUIUtility.ResourceStyle.LanguageResource"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <system:String x:Key="LangAllWeb">Tous les sites Web</system:String>
+    <system:String x:Key="LangEmbeddedBrowser">Navigateur</system:String>
+    <system:String x:Key="LangFetchData">Extraire les données</system:String>
+</ResourceDictionary>
