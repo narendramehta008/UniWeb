@@ -17,3 +17,22 @@ D:\Programming\Programs\Net\UniWeb\BaseLibs\bin\Debug\System.Data.SQLite.xml
 D:\Programming\Programs\Net\UniWeb\BaseLibs\obj\Debug\BaseLibs.csprojResolveAssemblyReference.cache
 D:\Programming\Programs\Net\UniWeb\BaseLibs\obj\Debug\BaseLibs.dll
 D:\Programming\Programs\Net\UniWeb\BaseLibs\obj\Debug\BaseLibs.pdb
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseLibs\bin\Debug\BaseLibs.dll.config
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseLibs\bin\Debug\BaseLibs.dll
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseLibs\bin\Debug\BaseLibs.pdb
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseLibs\bin\Debug\EntityFramework.dll
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseLibs\bin\Debug\EntityFramework.SqlServer.dll
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseLibs\bin\Debug\HtmlAgilityPack.dll
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseLibs\bin\Debug\Newtonsoft.Json.dll
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseLibs\bin\Debug\System.Data.SQLite.dll
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseLibs\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseLibs\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseLibs\bin\Debug\EntityFramework.xml
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseLibs\bin\Debug\EntityFramework.SqlServer.xml
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseLibs\bin\Debug\HtmlAgilityPack.pdb
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseLibs\bin\Debug\HtmlAgilityPack.xml
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseLibs\bin\Debug\Newtonsoft.Json.xml
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseLibs\bin\Debug\System.Data.SQLite.xml
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseLibs\obj\Debug\BaseLibs.csprojResolveAssemblyReference.cache
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseLibs\obj\Debug\BaseLibs.dll
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseLibs\obj\Debug\BaseLibs.pdb

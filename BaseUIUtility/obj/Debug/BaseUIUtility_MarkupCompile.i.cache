@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Programming\Programs\Net\UniWeb\BaseUIUtility\obj\Debug\
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\obj\Debug\
 BaseUIUtility
 none
 false
 DEBUG;TRACE
-D:\Programming\Programs\Net\UniWeb\BaseUIUtility\App.xaml
-4-1533755219
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\App.xaml
+52129197691
 
 15-1207832664
 131254293103
-MainWindow.xaml;ResourceStyle\GeneralStyle\ParentStyle.xaml;ResourceStyle\LanguageResource\EngLanguageResource.xaml;ResourceStyle\LanguageResource\FrLanguageResource.xaml;
+MainWindow.xaml;ResourceStyle\GeneralStyle\ParentStyle.xaml;ResourceStyle\LanguageResource\EngLanguageResource.xaml;ResourceStyle\LanguageResource\FrLanguageResource.xaml;ResourceStyle\LanguageResource\HindiLanguageResource.xaml;
 
 False
 

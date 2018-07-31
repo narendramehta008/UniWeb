@@ -44,6 +44,20 @@
     <Compile Include="EnumFactory\GeneralEnums.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseLibs\BaseLibs.csproj">
+      <Project>{74b32e94-09bf-4d76-b053-6e2103687f6b}</Project>
+      <Name>BaseLibs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BaseUIUtility\BaseUIUtility.csproj">
+      <Project>{bdae7ea3-499d-489a-83de-19db3869523f}</Project>
+      <Name>BaseUIUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UniWeb\UniWeb.csproj">
+      <Project>{a465b523-d24a-4472-9efa-b3f40a01b881}</Project>
+      <Name>UniWeb</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

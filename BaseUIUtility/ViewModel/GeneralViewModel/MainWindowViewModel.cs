@@ -18,7 +18,7 @@ namespace BaseUIUtility.ViewModel.GeneralViewModel
         }
 
         public List<string> Languages
-            = new List<string>() { "English", "French" };
+            = new List<string>() { "English", "French" ,"Hindi"};
 
         private string _SelectedLanguage = "English";
         public string SelectedLanguage
