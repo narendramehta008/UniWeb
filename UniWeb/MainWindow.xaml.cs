@@ -19,6 +19,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using UniWeb;
+using UniWeb.View.AllWeb;
 using UniWeb.View.TabContentView;
 
 namespace UniWeb
@@ -70,7 +71,7 @@ namespace UniWeb
                         break;
 
                     case "AllWebTab":
-                        MainWindowViewModel.CurrentTab = new Lazy<UserControl>(() => AllWebTabContent.GetObj());
+                        MainWindowViewModel.CurrentTab = new Lazy<UserControl>(() => EmbeddedBrowser.GetObj());
                         break;
 
                         //case "FacebookTab":
@@ -118,14 +119,28 @@ namespace UniWeb
         }
         private void WindowMaximize_Click(object sender, RoutedEventArgs e)
         {
+            #region Window Maximize
             try
             {
+                if (MainWindowViewModel.WindowMaximize.Equals(App.Current.FindResource("LangKeyMaximize").ToString()))
+                {
+                    MainWindowViewModel.WindowMaximizeIcon = Visibility.Collapsed;
+                    MainWindowViewModel.WindowRestoreIcon = Visibility.Visible;
+                    MainWindowViewModel.WindowMaximize = App.Current.FindResource("LangKeyRestore").ToString();
+                }
+                else
+                {
+                    MainWindowViewModel.WindowMaximizeIcon = Visibility.Visible;
+                    MainWindowViewModel.WindowRestoreIcon = Visibility.Collapsed;
+                    MainWindowViewModel.WindowMaximize = App.Current.FindResource("LangKeyRestore").ToString();
+                }
                 WindowState = WindowState.Maximized;
             }
             catch (Exception ex)
             {
 
-            }
+            } 
+            #endregion
         }
 
         private void WindowClose_Click(object sender, RoutedEventArgs e)

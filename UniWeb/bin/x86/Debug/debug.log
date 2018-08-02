@@ -1,0 +1,35 @@
+[0802/215246.918:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
+[0802/215348.603:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
+[0802/215630.642:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
+[0802/215758.985:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
+[0802/215938.108:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
+[0802/215953.136:WARNING:spdy_session.cc(2921)] Received HEADERS for invalid stream 23
+[0802/215953.136:WARNING:spdy_session.cc(2921)] Received HEADERS for invalid stream 25
+[0802/215953.861:WARNING:spdy_session.cc(2921)] Received HEADERS for invalid stream 29
+[0802/220244.875:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
+[0802/221559.109:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
+[0802/221733.911:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
+[0802/221836.439:INFO:CONSOLE(3)] "CMP Error: Error retrieving GDPR consent from GUCE", source: https://consent.cmp.oath.com/version/2.7.2/cmp.js (3)
+[0802/221842.005:INFO:CONSOLE(3)] "DARLA notice: 405", source: https://s.yimg.com/rq/darla/3-4-0/js/g-r-min.js (3)
+[0802/221845.892:INFO:CONSOLE(21)] "darla csc writer, potential invalid html content", source: https://s.yimg.com/rq/darla/3-4-0/html/r-csc.html (21)
+[0802/221848.568:INFO:CONSOLE(14)] "yui: NOT loaded: highlander-vertical-video", source: https://s.yimg.com/zz/combo?yui:/3.18.0/yui/yui-min.js (14)
+[0802/221848.569:INFO:CONSOLE(14)] "yui: NOT loaded: highlander-client-templates-viewer-controls-atomic", source: https://s.yimg.com/zz/combo?yui:/3.18.0/yui/yui-min.js (14)
+[0802/221849.680:INFO:CONSOLE(14)] "yui: NOT loaded: highlander-vertical-video", source: https://s.yimg.com/zz/combo?yui:/3.18.0/yui/yui-min.js (14)
+[0802/221849.681:INFO:CONSOLE(14)] "yui: NOT loaded: highlander-vertical-video", source: https://s.yimg.com/zz/combo?yui:/3.18.0/yui/yui-min.js (14)
+[0802/221849.686:INFO:CONSOLE(14)] "yui: NOT loaded: highlander-client-templates-viewer-controls-atomic", source: https://s.yimg.com/zz/combo?yui:/3.18.0/yui/yui-min.js (14)
+[0802/221849.686:INFO:CONSOLE(14)] "yui: NOT loaded: highlander-client-templates-viewer-controls-atomic", source: https://s.yimg.com/zz/combo?yui:/3.18.0/yui/yui-min.js (14)
+[0802/221849.686:INFO:CONSOLE(14)] "yui: NOT loaded: highlander-vertical-video", source: https://s.yimg.com/zz/combo?yui:/3.18.0/yui/yui-min.js (14)
+[0802/221856.386:INFO:CONSOLE(14)] "yui: NOT loaded: td-applet-storyswarm-atomic-templates-list.tumblr", source: https://s.yimg.com/zz/combo?yui:/3.18.0/yui/yui-min.js (14)
+[0802/221856.674:INFO:CONSOLE(14)] "yui: NOT loaded: td-applet-storyswarm-atomic-templates-list.tumblr", source: https://s.yimg.com/zz/combo?yui:/3.18.0/yui/yui-min.js (14)
+[0802/221900.196:WARNING:render_frame_host_impl.cc(2751)] OnDidStopLoading was called twice.
+[0802/221900.295:INFO:CONSOLE(12)] "Emily:", source: https://eus.rubiconproject.com/usync.html?&geo=au&co=in (12)
+[0802/221900.303:INFO:CONSOLE(12)] "Emily:", source: https://eus.rubiconproject.com/usync.html?&geo=au&co=in (12)
+[0802/221900.310:INFO:CONSOLE(12)] "Emily:", source: https://eus.rubiconproject.com/usync.html?&geo=au&co=in (12)
+[0802/221900.318:INFO:CONSOLE(12)] "Emily:", source: https://eus.rubiconproject.com/usync.html?&geo=au&co=in (12)
+[0802/221900.325:INFO:CONSOLE(12)] "Emily:", source: https://eus.rubiconproject.com/usync.html?&geo=au&co=in (12)
+[0802/221900.843:INFO:CONSOLE(12)] "Emily:", source: https://eus.rubiconproject.com/usync.html?&geo=au&co=in (12)
+[0802/221900.878:INFO:CONSOLE(12)] "Emily:", source: https://eus.rubiconproject.com/usync.html?&geo=au&co=in (12)
+[0802/221900.886:INFO:CONSOLE(12)] "Emily:", source: https://eus.rubiconproject.com/usync.html?&geo=au&co=in (12)
+[0802/221902.224:WARNING:render_frame_host_impl.cc(2751)] OnDidStopLoading was called twice.
+[0802/221903.052:WARNING:render_frame_host_impl.cc(2751)] OnDidStopLoading was called twice.
+[0802/221903.117:WARNING:render_frame_host_impl.cc(2751)] OnDidStopLoading was called twice.

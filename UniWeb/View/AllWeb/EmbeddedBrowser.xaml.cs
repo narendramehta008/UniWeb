@@ -1,4 +1,5 @@
 ﻿using BaseUIUtility.ViewModel.GeneralViewModel;
+using FirstFloor.ModernUI.Presentation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,11 +24,12 @@ namespace UniWeb.View.AllWeb
     {
         EmbeddeBrowserViewModel EmbeddeBrowserViewModel = new EmbeddeBrowserViewModel();
 
-        private ICommand EnterPage;
+        private ICommand EnterPage => new RelayCommand(VisitUrl, IsExecute);
 
         public EmbeddedBrowser()
         {
             InitializeComponent();
+            DataContext = EmbeddeBrowserViewModel;
             // EnterPage => (IsExecute, VisitUrl);
         }
 
@@ -42,7 +44,18 @@ namespace UniWeb.View.AllWeb
 
         private void VisitUrl(object sender)
         {
+            try
+            {
 
+            }catch(Exception ex)
+            {
+                
+            }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Browser.Address = EmbeddeBrowserViewModel.WebAddress;
         }
     }
 }

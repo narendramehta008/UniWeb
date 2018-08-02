@@ -8,7 +8,7 @@ namespace BaseUIUtility.ViewModel.GeneralViewModel
 {
     public class EmbeddeBrowserViewModel : BindingObject
     {
-        private string _WebAddress;
+        private string _WebAddress= "https://www.google.com/";
 
         public string WebAddress
         {
@@ -16,7 +16,7 @@ namespace BaseUIUtility.ViewModel.GeneralViewModel
             set { SetProperty(ref _WebAddress, value); }
         }
 
-        private string _PageSource;
+        private string _PageSource="";
 
         public string PageSource
         {

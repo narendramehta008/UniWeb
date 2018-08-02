@@ -11,6 +11,7 @@
 
 
                 <ResourceDictionary Source="/BaseUIUtility;component/ResourceStyle/LanguageResource/EngLanguageResource.xaml" />
+                <ResourceDictionary Source="/BaseUIUtility;component/ResourceStyle/LanguageResource/AllLanguageResource.xaml" />
 
                 <ResourceDictionary Source="/FirstFloor.ModernUI;component/Assets/ModernUI.xaml" />
                 <ResourceDictionary Source="/FirstFloor.ModernUI;component/Assets/ModernUI.Light.xaml"/>

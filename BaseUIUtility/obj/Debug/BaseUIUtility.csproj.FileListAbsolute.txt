@@ -16,3 +16,4 @@ D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\obj\Debug\BaseU
 D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\obj\Debug\BaseUIUtility.exe
 D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\obj\Debug\BaseUIUtility.pdb
 D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\obj\Debug\ResourceStyle\LanguageResource\HindiLanguageResource.baml
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\obj\Debug\ResourceStyle\LanguageResource\AllLanguageResource.baml

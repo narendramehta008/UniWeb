@@ -43,14 +43,14 @@
 
     <Grid Background="WhiteSmoke">
         <Grid.RowDefinitions>
-            <RowDefinition Height="40" />
-            <RowDefinition Height="*" />
+            <RowDefinition Name="GridTitleMenu" Height="40" />
+            <RowDefinition Name="GridBody" Height="*" />
+            <RowDefinition Name="GridFooter" Height="50"></RowDefinition>
         </Grid.RowDefinitions>
-
 
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition  Width="*"/>
                 <ColumnDefinition Width="150"/>
             </Grid.ColumnDefinitions>
 
@@ -61,22 +61,17 @@
                 <Button  Name="WindowMinimize" Background="White"  Click="WindowMinimize_Click">
                     <materialDesign:PackIcon  Foreground="Gray" Kind="WindowMinimize"/>
                 </Button>
-                <Button  Name="WindowMaximize" ToolTip="Maximize" Background="White"  Click="WindowMaximize_Click" >
-                    <materialDesign:PackIcon Foreground="Gray" Kind="WindowMaximize"/>
-                    <!--  <DataTrigger Binding="{Binding ElementName=WindowMaximize,Path=ToolTip}" Value="Maximize">
-                            <Setter Property="ToolTip" Value="{Binding ElementName=MaximizeIcon}" />
-                            <Setter Property="Style" Value="{Binding ElementName=MaximizeIcon}" />
-                        </DataTrigger>
-                        <DataTrigger Binding="{Binding ElementName=WindowMaximize,Path=ToolTip}" Value="Restore">
-                            <Setter Property="Style" Value="{Binding ElementName=MaximizeIcon}" />
-                        </DataTrigger>-->
+                <Button  Name="WindowMaximize" ToolTip="{Binding WindowMaximize,UpdateSourceTrigger=PropertyChanged}" Background="White"  Click="WindowMaximize_Click" >
+                    <StackPanel>
+                        <materialDesign:PackIcon Name="WindowMaximizeIcon" Visibility="{Binding WindowMaximizeIcon}" Foreground="Gray" Kind="WindowMaximize"/>
+                        <materialDesign:PackIcon Name="WindowRestoreIcon" Visibility="{Binding WindowRestoreIcon}" Foreground="Gray" Kind="WindowRestore"/>
+                    </StackPanel>
                 </Button>
                 <Button  Name="WindowClose" Background="White" Click="WindowClose_Click" >
                     <materialDesign:PackIcon  Foreground="Gray" Kind="WindowClose"/>
                 </Button>
             </StackPanel>
         </Grid>
-
 
         <!--<Grid Height="50">
             <StackPanel HorizontalAlignment="Left" Margin="10,0" >
@@ -104,12 +99,11 @@
         </Grid>-->
 
 
-        <Grid Grid.Row="1"  >
+        <Grid  Grid.Row="1"  >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-
 
             <Grid Height="60" VerticalAlignment="Top" Background="White">
                 <Grid.Effect>
@@ -197,8 +191,13 @@
             </Grid>
 
             <Grid x:Name="GridMain" Grid.Column="1" Margin="10,5"     >
+                <!--<materialDesign:ColorZone Mode="PrimaryDark" MinHeight="350" Height="{Binding ElementName=GridMain,Path=Height}">
+                </materialDesign:ColorZone>-->
                 <UserControl Content="{Binding CurrentTab.Value}" />
+               
             </Grid>
+
+            <!--materialDesign:ColorZone Mode="PrimaryDark"-->
             <!--<ContentPresenter  >
                 <ContentPresenter.Resources>
                     <DataTemplate DataType="{x:Type contentTab:AccountContentPage}">
@@ -210,6 +209,5 @@
                 </ContentPresenter.Resources>
             </ContentPresenter>-->
         </Grid>
-
     </Grid>
 </Window>

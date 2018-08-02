@@ -6,10 +6,15 @@
              xmlns:local="clr-namespace:UniWeb.View.AllWeb"
              mc:Ignorable="d" 
             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        Height="800" Width="900">
+             xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
+        >
+
+    <UserControl.CommandBindings>
+        <!--<CommandBinding Command="ApplicationCommands.New" Executed="NewCommand_Executed" CanExecute="NewCommand_CanExecute" />-->
+    </UserControl.CommandBindings>
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="49*"/>
+            <RowDefinition Height="50"/>
             <RowDefinition Height="720*"/>
         </Grid.RowDefinitions>
 
@@ -17,24 +22,21 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="150" />
                 <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="100" />
             </Grid.ColumnDefinitions>
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" >
                 <materialDesign:PackIcon Kind="ArrowLeft" Foreground="Gray" Height="30" Width="40" />
                 <materialDesign:PackIcon Kind="ArrowRight" Foreground="Gray" Height="30" Width="40"  />
                 <materialDesign:PackIcon Kind="Refresh" Foreground="Gray" Height="30" Width="40"  />
             </StackPanel>
-            <TextBox Grid.Column="1" MinWidth="600" materialDesign:HintAssist.Hint="Enter Website Url"  >
+            <TextBox Grid.Column="1" Text="{Binding WebAddress}"  MinWidth="600" materialDesign:HintAssist.Hint="Enter Website Url"  >
                 <TextBox.InputBindings>
                     <KeyBinding Command="{Binding EnterPage}" Key="Return" />
                 </TextBox.InputBindings>
             </TextBox>
-            <Button Grid.Column="2" Width="100" HorizontalAlignment="Right" Content="Search"/>
+            <Button Grid.Column="2" Width="100" HorizontalAlignment="Right" Content="Search" Click="Button_Click"/>
         </Grid>
 
-        <Grid >
-            
-        </Grid>
+        <cefSharp:ChromiumWebBrowser x:Name="Browser" Grid.Row="1" />
 
     </Grid>
   
