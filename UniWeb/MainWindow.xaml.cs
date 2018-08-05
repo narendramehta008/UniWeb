@@ -1,12 +1,16 @@
 ﻿
 using BaseLibs.DBUtility;
 using BaseLibs.EntityModel;
+using BaseLibs.Logger;
 using BaseUIUtility.ViewModel.GeneralViewModel;
 using FirstFloor.ModernUI.Windows.Controls;
+using log4net;
+using log4net.Config;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -37,6 +41,7 @@ namespace UniWeb
 
         }
         MainWindowViewModel MainWindowViewModel = new MainWindowViewModel();
+       // private static readonly ILog _log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
         private void InitializeValues()
         {
@@ -46,54 +51,18 @@ namespace UniWeb
 
                 DataContext = MainWindowViewModel;
                 Languages.ItemsSource = MainWindowViewModel.Languages;
-                MainWindowViewModel.CurrentTab = new Lazy<UserControl>(() => AllWebTabContent.GetObj());
+                MainWindowViewModel.CurrentTab = new Lazy<UserControl>(() => AccountsTabContent.GetObj());
 
                 //FbAccount fbAccount = new FbAccount() { UserId = "26415616", Username = "one", Email = "any.com", Password = "efsdfsdfsdf", LoginStatus = "Not Logged In", LogoSource = "sdfsfd" };
                 //DBConnector.AddData(fbAccount);
 
-
+                XmlConfigurator.Configure();
             }
-            catch (Exception ex) { }
-        }
-
-
-
-        private void ListViewMenu_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            try
+            catch (Exception ex)
             {
-                string tabSwitch = ((ListViewItem)((ListView)sender).SelectedItem).Name;
-
-                switch (tabSwitch)
-                {
-                    case "AllAccountTab":
-                        MainWindowViewModel.CurrentTab = new Lazy<UserControl>(() => AllWebTabContent.GetObj());
-                        break;
-
-                    case "AllWebTab":
-                        MainWindowViewModel.CurrentTab = new Lazy<UserControl>(() => EmbeddedBrowser.GetObj());
-                        break;
-
-                        //case "FacebookTab":
-                        //    mainWindowViewModel.CurrentTab = new Lazy<UserControl>(FBContentPage.getObj);
-                        //    break;
-                        //case "TwitterTab":
-                        //    GridMain.DataContext = TwitterTab.getObj();
-                        //    break;
-                        //case "PinterestTab":
-                        //    mainWindowViewModel.CurrentTab = new Lazy<UserControl>(PinContentPage.getObj);
-                        //    break;
-
-                        //case "FileIOTab":
-                        //    mainWindowViewModel.CurrentTab = new Lazy<UserControl>(FileIOContentPage.getObj);
-                        //   break;
-
-                }
+                Logger.Log.Error(ex.ToString());
             }
-            catch { }
-
         }
-
         private void ButtonOpenMenu_Click(object sender, RoutedEventArgs e)
         {
             ButtonCloseMenu.Visibility = Visibility.Visible;
@@ -114,7 +83,7 @@ namespace UniWeb
             }
             catch (Exception ex)
             {
-
+                Logger.Log.Error(ex.ToString());
             }
         }
         private void WindowMaximize_Click(object sender, RoutedEventArgs e)
@@ -126,20 +95,22 @@ namespace UniWeb
                 {
                     MainWindowViewModel.WindowMaximizeIcon = Visibility.Collapsed;
                     MainWindowViewModel.WindowRestoreIcon = Visibility.Visible;
+                    WindowState = WindowState.Maximized;
                     MainWindowViewModel.WindowMaximize = App.Current.FindResource("LangKeyRestore").ToString();
                 }
                 else
                 {
                     MainWindowViewModel.WindowMaximizeIcon = Visibility.Visible;
                     MainWindowViewModel.WindowRestoreIcon = Visibility.Collapsed;
-                    MainWindowViewModel.WindowMaximize = App.Current.FindResource("LangKeyRestore").ToString();
+                    WindowState = WindowState.Normal;
+                    MainWindowViewModel.WindowMaximize = App.Current.FindResource("LangKeyMaximize").ToString();
                 }
-                WindowState = WindowState.Maximized;
+
             }
             catch (Exception ex)
             {
-
-            } 
+                Logger.Log.Error(ex.ToString());
+            }
             #endregion
         }
 
@@ -172,7 +143,7 @@ namespace UniWeb
             }
             catch (Exception ex)
             {
-
+                Logger.Log.Error(ex.ToString());
             }
         }
 
@@ -186,8 +157,51 @@ namespace UniWeb
             }
             catch (Exception ex)
             {
+                Logger.Log.Error(ex.ToString());
             }
         }
+
+
+        private void ListViewMenu_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            try
+            {
+                string tabSwitch = ((ListViewItem)((ListView)sender).SelectedItem).Name;
+
+                switch (tabSwitch)
+                {
+                    case "AllAccountTab":
+                        MainWindowViewModel.CurrentTab = new Lazy<UserControl>(() => AccountsTabContent.GetObj());
+                        break;
+
+                    case "AllWebTab":
+                        MainWindowViewModel.CurrentTab = new Lazy<UserControl>(() => AllWebTabContent.GetObj());
+                        break;
+
+                        //case "FacebookTab":
+                        //    mainWindowViewModel.CurrentTab = new Lazy<UserControl>(FBContentPage.getObj);
+                        //    break;
+                        //case "TwitterTab":
+                        //    GridMain.DataContext = TwitterTab.getObj();
+                        //    break;
+                        //case "PinterestTab":
+                        //    mainWindowViewModel.CurrentTab = new Lazy<UserControl>(PinContentPage.getObj);
+                        //    break;
+
+                        //case "FileIOTab":
+                        //    mainWindowViewModel.CurrentTab = new Lazy<UserControl>(FileIOContentPage.getObj);
+                        //   break;
+
+                }
+            }
+            catch(Exception ex)
+            {
+                Logger.Log.Error(ex.ToString());
+            }
+
+        }
+
+      
     }
 
 }

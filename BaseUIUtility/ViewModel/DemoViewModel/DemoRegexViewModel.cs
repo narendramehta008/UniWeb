@@ -61,10 +61,10 @@ namespace BaseUIUtility.ViewModel.DemoViewModel
 
     public class RegexCodeBind
     {
-        private int SNo;
-        private bool IsRegexEnabled;
-        private string RegexExpression;
-        private List<Color> ListColor;
+        //private int SNo;
+        //private bool IsRegexEnabled;
+        //private string RegexExpression;
+        //private List<Color> ListColor;
 
         public event PropertyChangedEventHandler PropertyChanged;
         public void FirePropertyChanged(string str)

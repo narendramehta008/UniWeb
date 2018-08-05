@@ -27,7 +27,7 @@ namespace BaseLibs.DBUtility
             }
             catch (Exception ex)
             {
-
+                Logger.Logger.Log.Error(ex.ToString());
             }
             return IsSuccess;
         }
@@ -46,7 +46,7 @@ namespace BaseLibs.DBUtility
             }
             catch (Exception ex)
             {
-
+                Logger.Logger.Log.Error(ex.ToString());
             }
             return IsSuccess;
         }
@@ -63,7 +63,7 @@ namespace BaseLibs.DBUtility
             }
             catch (Exception ex)
             {
-
+                Logger.Logger.Log.Error(ex.ToString());
             }
             return DataList;
         }
@@ -80,6 +80,7 @@ namespace BaseLibs.DBUtility
             }
             catch (Exception ex)
             {
+                Logger.Logger.Log.Error(ex.ToString());
             }
             return data;
         }
@@ -100,7 +101,7 @@ namespace BaseLibs.DBUtility
             }
             catch (Exception ex)
             {
-
+                Logger.Logger.Log.Error(ex.ToString());
             }
             return IsSuccess;
         }
@@ -120,7 +121,7 @@ namespace BaseLibs.DBUtility
             }
             catch (Exception ex)
             {
-
+                Logger.Logger.Log.Error(ex.ToString());
             }
             return IsSuccess;
         }
@@ -139,7 +140,7 @@ namespace BaseLibs.DBUtility
             }
             catch (Exception ex)
             {
-
+                Logger.Logger.Log.Error(ex.ToString());
             }
             return IsSuccess;
         }
@@ -160,7 +161,7 @@ namespace BaseLibs.DBUtility
             }
             catch (Exception ex)
             {
-
+                Logger.Logger.Log.Error(ex.ToString());
             }
             return IsSuccess;
         }
@@ -179,7 +180,7 @@ namespace BaseLibs.DBUtility
             }
             catch (Exception ex)
             {
-
+                Logger.Logger.Log.Error(ex.ToString());
             }
             return IsSuccess;
         }

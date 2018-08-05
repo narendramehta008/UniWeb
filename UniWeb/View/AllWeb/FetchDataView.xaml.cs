@@ -24,5 +24,12 @@ namespace UniWeb.View.AllWeb
         {
             InitializeComponent();
         }
+
+        private static FetchDataView obj;
+
+        public static FetchDataView GetObj()
+        {
+            return obj ?? (obj = new FetchDataView());
+        }
     }
 }

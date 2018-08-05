@@ -6,14 +6,16 @@
              xmlns:local="clr-namespace:UniWeb.View.TabContentView"
              xmlns:dragablz="http://dragablz.net/winfx/xaml/dragablz"
              mc:Ignorable="d" 
+             xmlns:webTab="clr-namespace:UniWeb.View.AllWeb"
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
         <dragablz:TabablzControl Name="TabControlAllWeb">
             <TabItem Header="{DynamicResource LangEmbeddedBrowser}">
-                <ContentControl Content="{Binding BrowserTab.Value}"></ContentControl>
+                <webTab:EmbeddedBrowser />
             </TabItem>
             <TabItem Header="{DynamicResource LangFetchData}">
-                <ContentControl Content="{Binding FetchDataTab.Value}"></ContentControl>
+                <webTab:FetchDataView />
+                <!--<ContentControl Content="{Binding FetchDataTab.Value}"></ContentControl>-->
             </TabItem>
         </dragablz:TabablzControl>
 

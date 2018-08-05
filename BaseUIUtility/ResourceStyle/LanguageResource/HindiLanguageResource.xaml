@@ -5,6 +5,8 @@
 
 
     <system:String x:Key="LangAllWeb">सभी वेब</system:String>
+    <system:String x:Key="LangAccount">खाता</system:String>
+    
     <system:String x:Key="LangEmbeddedBrowser">ब्राउज़र</system:String>
     <system:String x:Key="LangFetchData">डेटा प्राप्त करें</system:String>
 

@@ -66,7 +66,7 @@ namespace BaseLibs.WebUtility
             }
             catch (Exception ex)
             {
-
+                Logger.Logger.Log.Error(ex.ToString());
             }
             return currentWebResponse;
         }

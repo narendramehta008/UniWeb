@@ -4,6 +4,7 @@
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
 
     <system:String x:Key="LangAllWeb">Tous les sites Web</system:String>
+    <system:String x:Key="LangAccount">Compte</system:String>
     <system:String x:Key="LangEmbeddedBrowser">Navigateur</system:String>
     <system:String x:Key="LangFetchData">Extraire les données</system:String>
 </ResourceDictionary>

@@ -75,11 +75,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModel\AccountTabViewModel\AccountsViewModel.cs" />
     <Compile Include="ViewModel\DemoViewModel\DemoRegexViewModel.cs" />
     <Compile Include="ViewModel\GeneralViewModel\BindingObject.cs" />
-    <Compile Include="ViewModel\GeneralViewModel\EmbeddeBrowserViewModel.cs" />
+    <Compile Include="ViewModel\WebTabViewModel\EmbeddeBrowserViewModel.cs" />
     <Compile Include="ViewModel\GeneralViewModel\MainWindowViewModel.cs" />
     <Compile Include="ViewModel\GeneralViewModel\TabTemplate.cs" />
+    <Compile Include="ViewModel\TabContentViewModel\AccountTabContentViewModel.cs" />
     <Compile Include="ViewModel\TabContentViewModel\AllWebTabContentViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -143,6 +145,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CustomControl\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseLibs\BaseLibs.csproj">
+      <Project>{74B32E94-09BF-4D76-B053-6E2103687F6B}</Project>
+      <Name>BaseLibs</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

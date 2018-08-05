@@ -5,6 +5,9 @@
 
    
     <system:String x:Key="LangAllWeb">All Web</system:String>
+    <system:String x:Key="LangAccount">Accounts</system:String>
+    
+    <system:String x:Key="LangAdvanceSetting">Advance Setting</system:String>
     <system:String x:Key="LangEmbeddedBrowser">Browser</system:String>
     <system:String x:Key="LangFetchData">Fetch Data</system:String>
     

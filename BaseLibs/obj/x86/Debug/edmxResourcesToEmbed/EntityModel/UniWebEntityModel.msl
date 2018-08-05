@@ -1,66 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="UniWebModelStoreContainer" CdmEntityContainer="UniWebEntities">
-    <EntitySetMapping Name="FbAccounts">
-      <EntityTypeMapping TypeName="UniWebModel.FbAccount">
-        <MappingFragment StoreEntitySet="FbAccounts">
-          <ScalarProperty Name="SNo" ColumnName="SNo" />
-          <ScalarProperty Name="Username" ColumnName="Username" />
-          <ScalarProperty Name="Email" ColumnName="Email" />
-          <ScalarProperty Name="Password" ColumnName="Password" />
-          <ScalarProperty Name="UserId" ColumnName="UserId" />
-          <ScalarProperty Name="LoginStatus" ColumnName="LoginStatus" />
-          <ScalarProperty Name="LogoSource" ColumnName="LogoSource" />
-          <ScalarProperty Name="Bio" ColumnName="Bio" />
-          <ScalarProperty Name="Session" ColumnName="Session" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="InstaAccounts">
-      <EntityTypeMapping TypeName="UniWebModel.InstaAccount">
-        <MappingFragment StoreEntitySet="InstaAccounts">
-          <ScalarProperty Name="SNo" ColumnName="SNo" />
-          <ScalarProperty Name="Username" ColumnName="Username" />
-          <ScalarProperty Name="Email" ColumnName="Email" />
-          <ScalarProperty Name="Password" ColumnName="Password" />
-          <ScalarProperty Name="UserId" ColumnName="UserId" />
-          <ScalarProperty Name="LoginStatus" ColumnName="LoginStatus" />
-          <ScalarProperty Name="LogoSource" ColumnName="LogoSource" />
-          <ScalarProperty Name="Bio" ColumnName="Bio" />
-          <ScalarProperty Name="Session" ColumnName="Session" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="PinAccounts">
-      <EntityTypeMapping TypeName="UniWebModel.PinAccount">
-        <MappingFragment StoreEntitySet="PinAccounts">
-          <ScalarProperty Name="SNo" ColumnName="SNo" />
-          <ScalarProperty Name="Username" ColumnName="Username" />
-          <ScalarProperty Name="Email" ColumnName="Email" />
-          <ScalarProperty Name="Password" ColumnName="Password" />
-          <ScalarProperty Name="UserId" ColumnName="UserId" />
-          <ScalarProperty Name="LoginStatus" ColumnName="LoginStatus" />
-          <ScalarProperty Name="LogoSource" ColumnName="LogoSource" />
-          <ScalarProperty Name="Bio" ColumnName="Bio" />
-          <ScalarProperty Name="Session" ColumnName="Session" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="TwtAccounts">
-      <EntityTypeMapping TypeName="UniWebModel.TwtAccount">
-        <MappingFragment StoreEntitySet="TwtAccounts">
-          <ScalarProperty Name="SNo" ColumnName="SNo" />
-          <ScalarProperty Name="Username" ColumnName="Username" />
-          <ScalarProperty Name="Email" ColumnName="Email" />
-          <ScalarProperty Name="Password" ColumnName="Password" />
-          <ScalarProperty Name="UserId" ColumnName="UserId" />
-          <ScalarProperty Name="LoginStatus" ColumnName="LoginStatus" />
-          <ScalarProperty Name="LogoSource" ColumnName="LogoSource" />
-          <ScalarProperty Name="Bio" ColumnName="Bio" />
-          <ScalarProperty Name="Session" ColumnName="Session" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="WebAccounts">
       <EntityTypeMapping TypeName="UniWebModel.WebAccount">
         <MappingFragment StoreEntitySet="WebAccounts">
@@ -73,6 +13,11 @@
           <ScalarProperty Name="LogoSource" ColumnName="LogoSource" />
           <ScalarProperty Name="Bio" ColumnName="Bio" />
           <ScalarProperty Name="Session" ColumnName="Session" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="ProxyIP" ColumnName="ProxyIP" />
+          <ScalarProperty Name="ProxyPort" ColumnName="ProxyPort" />
+          <ScalarProperty Name="ProxyUsername" ColumnName="ProxyUsername" />
+          <ScalarProperty Name="ProxyPassword" ColumnName="ProxyPassword" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

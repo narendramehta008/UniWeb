@@ -16,3 +16,5 @@ D:\Programming\Programs\GitHub Repositories\UniWeb\BaseLibs\bin\x86\Debug\Newton
 D:\Programming\Programs\GitHub Repositories\UniWeb\BaseLibs\bin\x86\Debug\System.Data.SQLite.xml
 D:\Programming\Programs\GitHub Repositories\UniWeb\BaseLibs\obj\x86\Debug\BaseLibs.dll
 D:\Programming\Programs\GitHub Repositories\UniWeb\BaseLibs\obj\x86\Debug\BaseLibs.pdb
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseLibs\bin\x86\Debug\log4net.dll
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseLibs\bin\x86\Debug\log4net.xml

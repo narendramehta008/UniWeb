@@ -128,3 +128,10 @@ D:\Programming\Programs\GitHub Repositories\UniWeb\UniWeb\obj\x86\Debug\UniWeb.P
 D:\Programming\Programs\GitHub Repositories\UniWeb\UniWeb\obj\x86\Debug\UniWeb.csproj.GenerateResource.Cache
 D:\Programming\Programs\GitHub Repositories\UniWeb\UniWeb\obj\x86\Debug\UniWeb.exe
 D:\Programming\Programs\GitHub Repositories\UniWeb\UniWeb\obj\x86\Debug\UniWeb.pdb
+D:\Programming\Programs\GitHub Repositories\UniWeb\UniWeb\bin\x86\Debug\log4net.dll
+D:\Programming\Programs\GitHub Repositories\UniWeb\UniWeb\bin\x86\Debug\log4net.xml
+D:\Programming\Programs\GitHub Repositories\UniWeb\UniWeb\obj\x86\Debug\View\Account\AccountsView.g.cs
+D:\Programming\Programs\GitHub Repositories\UniWeb\UniWeb\obj\x86\Debug\View\TabContentView\AccountsTabContent.g.cs
+D:\Programming\Programs\GitHub Repositories\UniWeb\UniWeb\obj\x86\Debug\View\Account\AccountsView.baml
+D:\Programming\Programs\GitHub Repositories\UniWeb\UniWeb\obj\x86\Debug\View\TabContentView\AccountsTabContent.baml
+D:\Programming\Programs\GitHub Repositories\UniWeb\UniWeb\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs

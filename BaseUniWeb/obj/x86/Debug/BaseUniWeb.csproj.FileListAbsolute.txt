@@ -102,3 +102,5 @@ D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUniWeb\bin\x86\Debug\Firs
 D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUniWeb\obj\x86\Debug\BaseUniWeb.csprojResolveAssemblyReference.cache
 D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUniWeb\obj\x86\Debug\BaseUniWeb.dll
 D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUniWeb\obj\x86\Debug\BaseUniWeb.pdb
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUniWeb\bin\x86\Debug\log4net.dll
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUniWeb\bin\x86\Debug\log4net.xml

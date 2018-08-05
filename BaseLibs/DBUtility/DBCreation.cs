@@ -55,6 +55,7 @@ namespace BaseLibs.DBUtility
             }
             catch (Exception ex)
             {
+                Logger.Logger.Log.Error(ex.ToString());
             }
         }
 

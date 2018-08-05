@@ -25,10 +25,6 @@ namespace BaseLibs.EntityModel
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<FbAccount> FbAccounts { get; set; }
-        public virtual DbSet<InstaAccount> InstaAccounts { get; set; }
-        public virtual DbSet<PinAccount> PinAccounts { get; set; }
-        public virtual DbSet<TwtAccount> TwtAccounts { get; set; }
         public virtual DbSet<WebAccount> WebAccounts { get; set; }
         public virtual DbSet<WebHeader> WebHeaders { get; set; }
     }

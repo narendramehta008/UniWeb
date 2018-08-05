@@ -16,3 +16,10 @@ D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\obj\x86\Debug\B
 D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\obj\x86\Debug\BaseUIUtility.csproj.GenerateResource.Cache
 D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\obj\x86\Debug\BaseUIUtility.exe
 D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\obj\x86\Debug\BaseUIUtility.pdb
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\obj\x86\Debug\BaseUIUtility.csprojResolveAssemblyReference.cache
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\bin\x86\Debug\BaseLibs.dll
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\bin\x86\Debug\log4net.dll
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\bin\x86\Debug\EntityFramework.dll
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\bin\x86\Debug\BaseLibs.pdb
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\bin\x86\Debug\log4net.xml
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\bin\x86\Debug\EntityFramework.xml

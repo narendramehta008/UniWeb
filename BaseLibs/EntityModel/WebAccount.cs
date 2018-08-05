@@ -23,5 +23,10 @@ namespace BaseLibs.EntityModel
         public string LogoSource { get; set; }
         public string Bio { get; set; }
         public string Session { get; set; }
+        public string Website { get; set; }
+        public string ProxyIP { get; set; }
+        public Nullable<long> ProxyPort { get; set; }
+        public string ProxyUsername { get; set; }
+        public string ProxyPassword { get; set; }
     }
 }

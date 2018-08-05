@@ -34,7 +34,8 @@ namespace UniWeb.View.TabContentView
             try
             {
                 DataContext = AllWebTabContentViewModel;
-                AllWebTabContentViewModel.BrowserTab = new Lazy<UserControl>(() => EmbeddedBrowser.GetObj());
+                //AllWebTabContentViewModel.BrowserTab = new Lazy<UserControl>(() => EmbeddedBrowser.GetObj());
+                //AllWebTabContentViewModel.FetchDataTab = new Lazy<UserControl>(() => FetchDataView.GetObj());
             }
             catch (Exception ex)
             {

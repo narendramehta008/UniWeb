@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Programming\Programs\GitHub Repositories\UniWeb\UniWeb\App.xaml
-4-1841502008
+6-669298137
 
-8618530121
-321755478166
-MainWindow.xaml;View\AllWeb\EmbeddedBrowser.xaml;View\AllWeb\FetchDataView.xaml;View\TabContentView\AllWebTabContent.xaml;
+10-60925474
+33-1907022797
+MainWindow.xaml;View\Account\AccountsView.xaml;View\AllWeb\EmbeddedBrowser.xaml;View\AllWeb\FetchDataView.xaml;View\TabContentView\AccountsTabContent.xaml;View\TabContentView\AllWebTabContent.xaml;
 
 False
 
