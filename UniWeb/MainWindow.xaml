@@ -45,7 +45,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Name="GridTitleMenu" Height="40" />
             <RowDefinition Name="GridBody" Height="*" />
-            <RowDefinition Name="GridFooter" Height="50"></RowDefinition>
+            <RowDefinition Name="GridFooter" Height="50" />
         </Grid.RowDefinitions>
 
         <Grid>
@@ -197,6 +197,7 @@
                
             </Grid>
 
+            
             <!--materialDesign:ColorZone Mode="PrimaryDark"-->
             <!--<ContentPresenter  >
                 <ContentPresenter.Resources>
@@ -209,5 +210,12 @@
                 </ContentPresenter.Resources>
             </ContentPresenter>-->
         </Grid>
+
+        <ListView x:Name="ListViewLogger" ItemsSource="{Binding Logger}" MouseDoubleClick="ListViewLogger_MouseDoubleClick"  Grid.Row="2" >
+            <ListView.InputBindings>
+                
+            </ListView.InputBindings>
+        </ListView>
+
     </Grid>
 </Window>

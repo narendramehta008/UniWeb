@@ -4,9 +4,80 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:UniWeb.View.AllWeb"
+             xmlns:material="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="600" d:DesignWidth="800">
     <Grid>
-            
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Name="ColumnResult" Width="250" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Pattern Column-->
+        
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"  />
+                <RowDefinition Name="PageData" Height="*"  />
+            </Grid.RowDefinitions>
+
+            <Expander Header="Pattern Collection">
+                <StackPanel>
+                    <ListView  Name="PatternCollection" ItemsSource="{Binding FetchDataInputBoxViewModelCollection,UpdateSourceTrigger=PropertyChanged}" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto" >
+                        <ListView.ContextMenu>
+                            <ContextMenu>
+                                <MenuItem Name="MenuItemDeletePattern" Click="MenuItemDeletePattern_Click" >
+                                    <MenuItem.Icon>
+                                        <StackPanel>
+                                            <material:PackIcon Kind="Delete" HorizontalAlignment="Left" />
+                                            <TextBlock Margin="5" Text="Delete" /> 
+                                        </StackPanel>
+                                    </MenuItem.Icon>
+                                </MenuItem>
+
+                                <MenuItem Name="MenuItemDuplicatePattern" Click="MenuItemDuplicatePattern_Click" >
+                                    <MenuItem.Icon>
+                                        <StackPanel>
+                                            <material:PackIcon Kind="ContentCopy" HorizontalAlignment="Left" />
+                                            <TextBlock Margin="5" Text="Duplicate" />
+                                        </StackPanel>
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                            </ContextMenu>
+                        </ListView.ContextMenu>
+                    </ListView>
+
+                    <StackPanel Orientation="Horizontal">
+                        <Button Width="200" Background="White" Foreground="Gray" Click="ButtonAddPattern_Click" HorizontalAlignment="Left" Margin="20,2"  >
+                            <StackPanel Orientation="Horizontal">
+                                <material:PackIcon Kind="Plus" HorizontalAlignment="Left" />
+                                <TextBlock Text="Add More Pattern" HorizontalAlignment="Right" />
+                            </StackPanel>
+                        </Button>
+
+                        <Button Width="200" Background="White" Foreground="Gray" Click="ButtonImport_Click"  HorizontalAlignment="Left" Margin="20,2"  >
+                            <StackPanel Orientation="Horizontal" >
+                                <material:PackIcon Kind="Import" HorizontalAlignment="Left" />
+                                <TextBlock Text="Import PageSource" HorizontalAlignment="Right" />
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                </StackPanel>
+            </Expander>
+
+            <TextBox VerticalContentAlignment="Top" Grid.Row="1" TextWrapping="Wrap"  Padding="5" Text="{Binding PageData, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" AcceptsReturn="True"  Name="RichTextBox_Source" VerticalScrollBarVisibility="Visible" Margin="5"  >
+                <TextBox.Template>
+                    <ControlTemplate>
+                        <Border CornerRadius="10" Background="Azure" BorderBrush="#FF70B0F0" BorderThickness="2">
+                            <ScrollViewer x:Name="PART_ContentHost" />
+                        </Border>
+                    </ControlTemplate>
+                </TextBox.Template>
+            </TextBox>
+        </Grid>
+
+        <!-- Pattern Result Column-->
+        
+        <ListView Grid.Column="1"></ListView>
     </Grid>
 </UserControl>

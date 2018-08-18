@@ -40,7 +40,7 @@ namespace UniWeb.View.Account
             }
             catch (Exception ex)
             {
-                Logger.Log.Debug(ex.ToString());
+                Logger.Log.Error(ex.ToString());
             }
         }
 

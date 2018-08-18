@@ -1,4 +1,5 @@
-﻿using BaseUIUtility.ViewModel.TabContentViewModel;
+﻿using BaseLibs.Logger;
+using BaseUIUtility.ViewModel.TabContentViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -39,7 +40,7 @@ namespace UniWeb.View.TabContentView
             }
             catch (Exception ex)
             {
-
+                ex.ErrorLog();
             }
         }
 

@@ -9,4 +9,8 @@
     <system:String x:Key="LangKeyMaximize">Maximize</system:String>
     <system:String x:Key="LangKeyRestore">Restore</system:String>
 
+    <system:String x:Key="LangKeyRegex">Regex</system:String>
+    <system:String x:Key="LangKeyGetBetween">GetBetween</system:String>
+    <system:String x:Key="LangKeyHtmlAgility">HtmlAgility</system:String>
+
 </ResourceDictionary>

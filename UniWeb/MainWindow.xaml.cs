@@ -36,26 +36,25 @@ namespace UniWeb
         public MainWindow()
         {
             InitializeComponent();
-
             InitializeValues();
 
         }
         MainWindowViewModel MainWindowViewModel = new MainWindowViewModel();
+
        // private static readonly ILog _log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
         private void InitializeValues()
         {
             try
             {
+               
                 // DBCreation dBCreation = new DBCreation();
 
                 DataContext = MainWindowViewModel;
                 Languages.ItemsSource = MainWindowViewModel.Languages;
                 MainWindowViewModel.CurrentTab = new Lazy<UserControl>(() => AccountsTabContent.GetObj());
-
-                //FbAccount fbAccount = new FbAccount() { UserId = "26415616", Username = "one", Email = "any.com", Password = "efsdfsdfsdf", LoginStatus = "Not Logged In", LogoSource = "sdfsfd" };
-                //DBConnector.AddData(fbAccount);
-
+                Logger.AddToLogger +=AddToLogger;
+                Logger.Log.Info("Welcome to UniWeb.");
                 XmlConfigurator.Configure();
             }
             catch (Exception ex)
@@ -201,7 +200,44 @@ namespace UniWeb
 
         }
 
-      
+        private void ListViewLogger_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            try
+            {
+                if (GridFooter.Height.Value == 50)
+                    GridFooter.Height = new GridLength(250);
+                else
+                    GridFooter.Height = new GridLength(50);
+                
+                
+            }
+            catch(Exception ex)
+            {
+                ListViewLogger.Dispatcher.Invoke(new Action(delegate
+                {
+                    if (GridFooter.Height.Value == 150)
+                        GridFooter.Height = new GridLength(150);
+                    else
+                        GridFooter.Height = new GridLength(50);
+                }));
+                Logger.Log.Error(ex.ToString());
+            }
+        }
+
+        private void AddToLogger(string message)
+        {
+            try
+            {
+                ListViewLogger.Dispatcher.Invoke(new Action(delegate 
+                {
+                    MainWindowViewModel.Logger.Insert(0,$"{DateTime.Now.ToString("yyyy/dd/MM HH:ss => ")} {message}");
+                }));
+
+            }catch(Exception ex)
+            {
+                Logger.Log.Error(ex.ToString());
+            }
+        }
     }
 
 }

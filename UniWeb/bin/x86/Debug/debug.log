@@ -63,3 +63,29 @@
 [0804/212720.020:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
 [0804/213256.167:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
 [0804/213628.369:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
+[0811/200612.912:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
+[0811/200614.286:WARNING:spdy_session.cc(2921)] Received HEADERS for invalid stream 11
+[0811/200927.636:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
+[0811/201137.474:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
+[0814/234828.310:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
+[0815/001004.939:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
+[0815/013610.929:ERROR:browser_gpu_channel_host_factory.cc(120)] Failed to launch GPU process.
+[0815/014704.949:ERROR:browser_gpu_channel_host_factory.cc(120)] Failed to launch GPU process.
+[0815/031109.593:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
+[0815/031503.688:ERROR:browser_gpu_channel_host_factory.cc(120)] Failed to launch GPU process.
+[0815/031727.079:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
+[0815/032026.583:ERROR:browser_gpu_channel_host_factory.cc(120)] Failed to launch GPU process.
+[0815/032423.043:ERROR:browser_gpu_channel_host_factory.cc(120)] Failed to launch GPU process.
+[0815/032636.668:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
+[0815/124423.041:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
+[0815/125522.560:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
+[0815/125913.544:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
+[0815/135016.305:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
+[0815/135330.263:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
+[0815/135510.168:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
+[0815/140131.982:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
+[0815/141009.982:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
+[0815/141831.054:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
+[0815/142104.276:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
+[0815/145004.563:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542
+[0815/145152.520:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 542

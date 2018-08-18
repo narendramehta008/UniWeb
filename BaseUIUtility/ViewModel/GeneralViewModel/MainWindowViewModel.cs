@@ -1,5 +1,7 @@
-﻿using System;
+﻿using BaseLibs.EnumPack;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,9 +20,9 @@ namespace BaseUIUtility.ViewModel.GeneralViewModel
             set { SetProperty(ref _CurrentTab, value); }
         }
 
-        public List<string> Languages = new List<string>() { App.Current.FindResource("LanguageEng").ToString(),
+        public List<string> Languages = new List<string>() { LanguageEnums.English.ToString(), LanguageEnums.French.ToString() }; /* App.Current.FindResource("LanguageEng").ToString(),
                 //App.Current.FindResource("LanguageHindi").ToString(),
-                App.Current.FindResource("LanguageFr").ToString()};
+                App.Current.FindResource("LanguageFr").ToString()*/
 
         private string _SelectedLanguage = App.Current.FindResource("LanguageEng").ToString();
 
@@ -50,6 +52,13 @@ namespace BaseUIUtility.ViewModel.GeneralViewModel
         {
             get { return _WindowRestoreIcon; }
             set { SetProperty(ref _WindowRestoreIcon, value); }
+        }
+
+        private ObservableCollection<string> _Logger = new ObservableCollection<string>();
+        public ObservableCollection<string> Logger
+        {
+            get { return _Logger; }
+            set { SetProperty(ref _Logger, value); }
         }
     }
 }

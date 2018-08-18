@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BaseLibs.Logger;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -62,7 +63,7 @@ namespace UniWeb
             }
             catch (Exception ex)
             {
-
+                ex.ErrorLog();
             }
         }
     }

@@ -19,6 +19,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Threading;
 using BaseLibs.Logger;
 using BaseUIUtility.ViewModel.WebTabViewModel;
+using BaseLibs.GlobalsPack;
 
 namespace UniWeb.View.AllWeb
 {
@@ -97,10 +98,11 @@ namespace UniWeb.View.AllWeb
         {
             try
             {
-                this.Browser.Load(EmbeddeBrowserViewModel.WebAddress);
+                EmbeddeBrowserViewModel.FinalWebAddress = EmbeddeBrowserViewModel.WebAddress;
             }catch(Exception ex)
             {
-                
+                Logger.Log.Error(ex.ToString());
+                ex.ErrorLog("Error");
             }
         }
 
@@ -117,6 +119,7 @@ namespace UniWeb.View.AllWeb
             }
             catch (Exception ex)
             {
+                ex.ErrorLog();
             }
         }
 
@@ -171,13 +174,13 @@ namespace UniWeb.View.AllWeb
                     }
                     catch (Exception ex)
                     {
-                       //  GlobusLogHelper.log.Error(ex.Message);
+                        ex.ErrorLog();
                     }
                 });
             }
             catch (Exception ex)
             {
-               //  GlobusLogHelper.log.Error(ex.Message);
+                ex.ErrorLog();
             }
             try
             {
@@ -190,34 +193,16 @@ namespace UniWeb.View.AllWeb
             }
             catch(Exception ex) 
             {
-                Logger.Log.Error(ex);
+                Logger.Log.Error(ex.ToString());
             }
         }
         private async void BrowserOnLoaded(object sender, LoadingStateChangedEventArgs loadingStateChangedEventArgs)
         {
             try
             {
-                string html = string.Empty ;
+                string html = await GetPageSource() ;
                 try
                 {
-                   await Browser.GetSourceAsync().ContinueWith(taskHtml =>
-                    {
-                        try
-                        {
-                             html = taskHtml.Result;
-                            //if (html.Contains("identifierNext"))
-                            //{
-                            //    Browser.ExecuteScriptAsync("document.getElementById('identifierId').value= '" + EmbeddeBrowserViewModel.WebAccount.Username + "'");
-                            //    Browser.ExecuteScriptAsync("document.getElementById('identifierNext').click()");
-                            //    Thread.Sleep(1000);
-                            //}
-                        }
-                        catch (Exception Ex)
-                        {
-
-                        }
-                    });
-
 
                     if (this.Dispatcher.Invoke<bool>((Func<bool>)(() => !this.Browser.IsLoaded)))
                         return;
@@ -273,13 +258,13 @@ namespace UniWeb.View.AllWeb
                                     {
                                         Thread th = new Thread(() => RunDuringLoad(html)); th.SetApartmentState(ApartmentState.STA); th.IsBackground = true; th.Start();
                                     }
-                                    catch (Exception ex) { }
+                                    catch (Exception ex) { ex.ErrorLog(); }
                                 });
                                 break;
                             }
-                            catch (Exception Ex)
+                            catch (Exception ex)
                             {
-
+                                ex.ErrorLog();
                             }
                         }
                     }
@@ -287,9 +272,9 @@ namespace UniWeb.View.AllWeb
                     // this.Browser.LoadingStateChanged -= new EventHandler<LoadingStateChangedEventArgs>(this.BrowserOnLoaded);
                     //  this.Browser.FrameLoadEnd += WebBrowserFrameLoadEnded;
                 }
-                catch (Exception Ex)
+                catch (Exception ex)
                 {
-
+                    ex.ErrorLog();
                 }
                 //Load_Page_Using_Thread();
                 //new Thread(() => Load_Page_Using_Thread()).Start();
@@ -559,6 +544,36 @@ namespace UniWeb.View.AllWeb
             {
                 throw new NotImplementedException();
             }
+        }
+
+       
+        private void MenuItemCopy_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Clipboard.SetText(EmbeddeBrowserViewModel.PageSource);
+            }
+            catch (Exception ex)
+            {
+                ex.ErrorLog();
+            }
+        }
+
+        private async Task<string> GetPageSource()
+        {
+            string pageSource = string.Empty;
+            try
+            {
+                await Browser.GetSourceAsync().ContinueWith(taskHtml =>
+                {
+                    Global.PageSource  = EmbeddeBrowserViewModel.PageSource = taskHtml.Result;
+                });
+            }
+            catch(Exception ex)
+            {
+                ex.ErrorLog();
+            }
+            return pageSource;
         }
     }
 }

@@ -23,9 +23,9 @@ namespace BaseUIUtility.ViewModel.WebTabViewModel
             set { SetProperty(ref _WebAddress, value); }
         }
 
-        private string _PageSource="";
+        private  string _PageSource="";
 
-        public string PageSource
+        public  string PageSource
         {
             get { return _PageSource; }
             set { SetProperty(ref _PageSource, value); }
@@ -39,6 +39,12 @@ namespace BaseUIUtility.ViewModel.WebTabViewModel
             set { SetProperty(ref _WebAccount, value); }
         }
 
-        
+        private string _FinalWebAddress = "https://www.google.com/";
+
+        public string FinalWebAddress
+        {
+            get { return _FinalWebAddress; }
+            set { SetProperty(ref _FinalWebAddress, value); }
+        }
     }
 }

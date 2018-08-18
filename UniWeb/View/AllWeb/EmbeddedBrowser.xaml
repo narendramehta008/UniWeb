@@ -23,6 +23,7 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="150" />
                 <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="50" />
             </Grid.ColumnDefinitions>
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" >
                 <materialDesign:PackIcon Kind="ArrowLeft" Foreground="Gray" Height="30" Width="40" />
@@ -30,7 +31,7 @@
                 <materialDesign:PackIcon Kind="Refresh" Foreground="Gray" Height="30" Width="40"  />
             </StackPanel>
             
-            <TextBox Grid.Column="1" Text="{Binding WebAddress}"  MinWidth="600" materialDesign:HintAssist.Hint="Enter Website Url"  >
+            <TextBox Grid.Column="1" Text="{Binding WebAddress}"  MinWidth="600" materialDesign:HintAssist.Hint="Enter Website Url" SpellCheck.IsEnabled="True"  >
                 <TextBox.InputBindings>
                     <KeyBinding x:Name="WebAddress"  Command="{Binding EnterPage}"  Key="Return"  />
                 </TextBox.InputBindings>
@@ -38,10 +39,23 @@
                     <CommandBinding Command="{Binding ApplicationCommands.New}" Executed="CommandBinding_Executed" CanExecute="CommandBinding_CanExecute" />
                 </TextBox.CommandBindings>-->
             </TextBox>
-            <Button Grid.Column="2" Width="100" HorizontalAlignment="Right" Content="Search" Click="Button_Click"/>
+
+            <Menu Grid.Column="3" >
+                <MenuItem Background="White"  Foreground="Gray">
+                    <MenuItem.Icon>
+                        <materialDesign:PackIcon Kind="Menu"/>
+                    </MenuItem.Icon>
+                    <MenuItem Header="Copy PageSource" Click="MenuItemCopy_Click">
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon Kind="ContentCopy"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+            </Menu>
+            <!--<Button Grid.Column="2" Width="100" HorizontalAlignment="Right" Content="Search" Click="Button_Click"/>-->
         </Grid>
 
-        <cefSharp:ChromiumWebBrowser  x:Name="Browser" Grid.Row="1" />
+        <cefSharp:ChromiumWebBrowser  x:Name="Browser" Address="{Binding FinalWebAddress}" Grid.Row="1" />
 
     </Grid>
 
