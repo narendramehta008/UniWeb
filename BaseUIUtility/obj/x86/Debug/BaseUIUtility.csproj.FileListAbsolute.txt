@@ -17,13 +17,11 @@ D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\bin\x86\Debug\M
 D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\bin\x86\Debug\log4net.xml
 D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\bin\x86\Debug\EntityFramework.xml
 D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\obj\x86\Debug\BaseUIUtility.csprojResolveAssemblyReference.cache
-D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\obj\x86\Debug\CustomControl\FetchDataInputBox.g.cs
 D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\obj\x86\Debug\MainWindow.g.cs
 D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\obj\x86\Debug\App.g.cs
 D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\obj\x86\Debug\BaseUIUtility_MarkupCompile.cache
 D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\obj\x86\Debug\BaseUIUtility_MarkupCompile.lref
 D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\obj\x86\Debug\App.baml
-D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\obj\x86\Debug\CustomControl\FetchDataInputBox.baml
 D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\obj\x86\Debug\MainWindow.baml
 D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\obj\x86\Debug\ResourceStyle\GeneralStyle\ParentStyle.baml
 D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\obj\x86\Debug\ResourceStyle\LanguageResource\AllLanguageResource.baml
@@ -35,3 +33,12 @@ D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\obj\x86\Debug\B
 D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\obj\x86\Debug\BaseUIUtility.csproj.GenerateResource.Cache
 D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\obj\x86\Debug\BaseUIUtility.exe
 D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\obj\x86\Debug\BaseUIUtility.pdb
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\bin\x86\Debug\SQLite.CodeFirst.dll
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\bin\x86\Debug\System.Data.SQLite.dll
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\bin\x86\Debug\System.Data.SQLite.EF6.dll
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\bin\x86\Debug\System.Data.SQLite.xml
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\obj\x86\Debug\BaseUIUtility.csproj.BaseUIUtility.exe.config
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\bin\x86\Debug\BaseLibs.dll.config
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\bin\x86\Debug\System.Data.SQLite.dll.config
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\obj\x86\Debug\CustomControl\FetchDataInputBoxView.g.cs
+D:\Programming\Programs\GitHub Repositories\UniWeb\BaseUIUtility\obj\x86\Debug\CustomControl\FetchDataInputBoxView.baml

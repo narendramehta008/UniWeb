@@ -2,6 +2,7 @@
 using BaseLibs.Logger;
 using BaseUIUtility.CustomControl;
 using BaseUIUtility.ViewModel.WebTabViewModel;
+using BaseUIUtility.ViewModel.CustomControl;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using BaseUniWeb.ViewFunctionality.AllWebFunc;
 
 namespace UniWeb.View.AllWeb
 {
@@ -24,31 +26,24 @@ namespace UniWeb.View.AllWeb
     /// </summary>
     public partial class FetchDataView : UserControl
     {
-        FetchDataViewModel FetchDataViewModel { get; set; } = new FetchDataViewModel();
+        FetchData FetchDataVMFunct { get; set; } = new FetchData();
 
         public FetchDataView()
         {
             InitializeComponent();
+            DataContext = FetchDataVMFunct;
         }
 
         private static FetchDataView obj;
 
         public static FetchDataView GetObj()
-        {
-            return obj ?? (obj = new FetchDataView());
-        }
+            => obj ?? (obj = new FetchDataView());
+        
 
        
         private void ButtonImport_Click(object sender, RoutedEventArgs e)
         {
-            try
-            {
-                FetchDataViewModel.PageData = Global.PageSource;
-            }
-            catch (Exception ex)
-            {
-                ex.ErrorLog();
-            }
+            FetchDataVMFunct.PageData = Global.PageSource;
         }
 
 
@@ -56,7 +51,9 @@ namespace UniWeb.View.AllWeb
         {
             try
             {
-                PatternCollection.Items.Add(new FetchDataInputBox());
+                FetchDataInputBoxModel FetchDataInputBoxModel = new FetchDataInputBoxModel();
+                FetchDataInputBoxModel.SNos = FetchDataVMFunct.FetchDataInputBoxModelCollection.Count + 1;
+                FetchDataVMFunct.FetchDataInputBoxModelCollection.Add(FetchDataInputBoxModel);
             }
             catch(Exception ex)
             {
@@ -68,8 +65,18 @@ namespace UniWeb.View.AllWeb
         {
             try
             {
-
-            }catch(Exception ex)
+                FetchDataVMFunct.FetchDataInputBoxModelCollection.Where(x => x.IsValidates).ToList().ForEach(data =>
+                {
+                   try
+                    {
+                        FetchDataVMFunct.FetchDataInputBoxModelCollection.Remove(data);
+                    }
+                    catch (Exception ex)
+                    {
+                    }
+                });
+            }
+            catch(Exception ex)
             {
                 ex.ErrorLog();
             }
@@ -86,5 +93,7 @@ namespace UniWeb.View.AllWeb
                 ex.ErrorLog();
             }
         }
+
+       
     }
 }

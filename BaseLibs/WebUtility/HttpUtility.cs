@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BaseLibs.Logger;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -23,27 +24,10 @@ namespace BaseLibs.WebUtility
                 if (RequestParameter == null)
                     SetRequest(ref Request);
                 GetHttpWebResponse(ref Request, ref currentWebResponse);
-
-                //var Response = (HttpWebResponse)Request.GetResponse();
-                //if (Response.StatusCode == HttpStatusCode.OK)
-                //{
-                //    Response.Cookies = Request.CookieContainer.GetCookies(Request.RequestUri);
-                //    currentWebResponse.ResponseUri = Response.ResponseUri.AbsoluteUri;
-                //    ReadCookies(Response.Cookies);
-                //    StreamReader reader = new StreamReader(Response.GetResponseStream(), Encoding.UTF8);
-                //    currentWebResponse.Reponse = reader.ReadToEnd();
-                //    reader.Close();
-                //}
-                //else
-                //{
-                //    SetErrorResponse(Response, ref currentWebResponse.WebErrorResponse);
-                //    return currentWebResponse;
-                //}
-                // currentWebResponse.IsSuccess = true;
             }
             catch (Exception ex)
             {
-
+                ex.ErrorLog();
             }
 
             return currentWebResponse;
@@ -66,7 +50,7 @@ namespace BaseLibs.WebUtility
             }
             catch (Exception ex)
             {
-                Logger.Logger.Log.Error(ex.ToString());
+                ex.ErrorLog();
             }
             return currentWebResponse;
         }

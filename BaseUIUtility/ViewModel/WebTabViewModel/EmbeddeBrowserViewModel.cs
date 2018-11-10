@@ -1,4 +1,5 @@
-﻿using BaseLibs.EntityModel;
+﻿using BaseLibs.DBUtility.EntityModel;
+
 using BaseUIUtility.ViewModel.GeneralViewModel;
 using System;
 using System.Collections.Generic;
@@ -11,11 +12,18 @@ namespace BaseUIUtility.ViewModel.WebTabViewModel
 {
     public class EmbeddeBrowserViewModel : BindingObject
     {
+
+        public EmbeddeBrowserViewModel()
+        {
+           // DemoActionCommand = new ActionCommand();
+        }
         private string _WebAddress= "https://www.google.com/";
 
         public ICommand EnterPage;
 
-       // public ICommand Check = new DelegateCommand<object>();
+        public ICommand DemoActionCommand;
+
+        // public ICommand Check = new DelegateCommand<object>();
 
         public string WebAddress
         {

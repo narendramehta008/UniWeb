@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UniWebModel.Store" Provider="System.Data.SQLite.EF6" ProviderManifestToken="data source=C:\UniWeb\Data\UniWeb.db" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="WebAccounts">
+    <Key>
+      <PropertyRef Name="SNo" />
+    </Key>
+    <Property Name="SNo" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" MaxLength="2147483647" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="2147483647" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="2147483647" Nullable="false" />
+    <Property Name="UserId" Type="varchar" MaxLength="20" />
+    <Property Name="LoginStatus" Type="nvarchar" MaxLength="2147483647" Nullable="false" />
+    <Property Name="LogoSource" Type="nvarchar" MaxLength="2147483647" Nullable="false" />
+    <Property Name="Bio" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="Session" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="Website" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="ProxyIP" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="ProxyPort" Type="integer" />
+    <Property Name="ProxyUsername" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="ProxyPassword" Type="nvarchar" MaxLength="2147483647" />
+  </EntityType>
+  <EntityType Name="WebHeaders">
+    <Key>
+      <PropertyRef Name="SNo" />
+    </Key>
+    <Property Name="SNo" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MainUrl" Type="nvarchar" MaxLength="2147483647" Nullable="false" />
+    <Property Name="PageUrl" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="PageUrlFormat" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="PostData" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="PostDataFormat" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="HeaderType" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="HeaderWithValues" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="Referer" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="TokenFormat" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="RefererFormat" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="Token" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="OtherField1" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="OtherField1Format" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="OtherField2" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="OtherField2Format" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="OtherField3" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="OtherField3Format" Type="nvarchar" MaxLength="2147483647" />
+  </EntityType>
+  <EntityContainer Name="UniWebModelStoreContainer">
+    <EntitySet Name="WebAccounts" EntityType="Self.WebAccounts" store:Type="Tables" />
+    <EntitySet Name="WebHeaders" EntityType="Self.WebHeaders" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

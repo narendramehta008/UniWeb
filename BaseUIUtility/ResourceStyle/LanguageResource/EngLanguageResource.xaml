@@ -6,7 +6,14 @@
    
     <system:String x:Key="LangAllWeb">All Web</system:String>
     <system:String x:Key="LangAccount">Accounts</system:String>
-    
+
+    <system:String x:Key="LangUserName">UserName</system:String>
+    <system:String x:Key="LangPassword">Password</system:String>
+    <system:String x:Key="LangPasswordChar">*******</system:String>
+    <system:String x:Key="LangEmail">Email</system:String>
+    <system:String x:Key="LangSubmit">Submit</system:String>
+
+
     <system:String x:Key="LangAdvanceSetting">Advance Setting</system:String>
     <system:String x:Key="LangEmbeddedBrowser">Browser</system:String>
     <system:String x:Key="LangFetchData">Fetch Data</system:String>

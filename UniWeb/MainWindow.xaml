@@ -178,13 +178,13 @@
                                 <materialDesign:PackIcon Kind="Pinterest" Foreground="#FFEC2929" Height="40" Width="40"/>
                                 <TextBlock FontWeight="ExtraBold" Text="Pinterest" VerticalAlignment="Center"  Margin="20 0"/>
                             </StackPanel>
-                        </ListViewItem>
-                        <ListViewItem x:Name="FileIOTab" Height="60">
+                        </ListViewItem>-->
+                        <ListViewItem x:Name="DemoTab" Height="60">
                             <StackPanel Orientation="Horizontal">
-                                <materialDesign:PackIcon Kind="Folder" Foreground="{StaticResource BrushStyle_Folder}" Height="40" Width="40"/>
+                                <materialDesign:PackIcon Kind="Recycle" Foreground="White" Height="40" Width="40"/>
                                 <TextBlock FontWeight="ExtraBold" Text="File IO" VerticalAlignment="Center"  Margin="20 0"/>
                             </StackPanel>
-                        </ListViewItem>-->
+                        </ListViewItem>
 
                     </ListView>
                 </StackPanel>

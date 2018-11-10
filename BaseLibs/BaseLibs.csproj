@@ -70,6 +70,10 @@
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="SQLite.CodeFirst, Version=1.5.1.25, Culture=neutral, PublicKeyToken=eb96ba0a78d831a7, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLite.CodeFirst.1.5.1.25\lib\net45\SQLite.CodeFirst.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -98,32 +102,42 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="CommandUtility\CommandHelper.cs" />
+    <Compile Include="DataUtility\HtmlAgilityHelper.cs" />
     <Compile Include="DataUtility\StringHandler.cs" />
     <Compile Include="DataUtility\Utils.cs" />
-    <Compile Include="DBUtility\DBConnector.cs" />
-    <Compile Include="DBUtility\DBCreation.cs" />
-    <Compile Include="EntityModel\UniWebEntityModel.Context.cs">
+    <Compile Include="DBUtility\CodeFirstConfig\GeneralCodeFirstConfig\DbContextMapper.cs" />
+    <Compile Include="DBUtility\CodeFirstConfig\GeneralCodeFirstConfig\DbHandler.cs" />
+    <Compile Include="DBUtility\CodeFirstConfig\GeneralCodeFirstConfig\SQLiteConfiguration.cs" />
+    <Compile Include="DBUtility\CodeFirstConfig\UniWebDbConfig\UniWebDBContext.cs" />
+    <Compile Include="DBUtility\CodeFirstConfig\UniWebDbConfig\UniWebDbInitialize.cs" />
+    <Compile Include="DBUtility\DbManager\DBConnector.cs" />
+    <Compile Include="DBUtility\DbManager\DBCreation.cs" />
+    <Compile Include="DBUtility\EntityModel\UniWebEntityModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>UniWebEntityModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="EntityModel\UniWebEntityModel.cs">
+    <Compile Include="DBUtility\EntityModel\UniWebEntityModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>UniWebEntityModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="EntityModel\UniWebEntityModel.Designer.cs">
+    <Compile Include="DBUtility\EntityModel\UniWebEntityModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>UniWebEntityModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="EntityModel\WebAccount.cs">
+    <Compile Include="DBUtility\EntityModel\WebAccount.cs">
       <DependentUpon>UniWebEntityModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="EntityModel\WebHeader.cs">
+    <Compile Include="DBUtility\EntityModel\WebHeader.cs">
       <DependentUpon>UniWebEntityModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="DBUtility\Models\SocialModels\FbAccountModel.cs" />
+    <Compile Include="EntityModel\Class1.cs" />
+    <Compile Include="EnumPack\CodeFirstEnums.cs" />
     <Compile Include="EnumPack\LanguageEnums.cs" />
+    <Compile Include="GlobalsPack\ConstantVariables.cs" />
     <Compile Include="GlobalsPack\Global.cs" />
     <Compile Include="Logger\ExceptionHandler.cs" />
     <Compile Include="Logger\Logger.cs" />
@@ -135,22 +149,22 @@
   <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="EntityModel\UniWebEntityModel.edmx">
+    <EntityDeploy Include="DBUtility\EntityModel\UniWebEntityModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>UniWebEntityModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="EntityModel\UniWebEntityModel.edmx.diagram">
+    <None Include="DBUtility\EntityModel\UniWebEntityModel.edmx.diagram">
       <DependentUpon>UniWebEntityModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="EntityModel\UniWebEntityModel.Context.tt">
+    <Content Include="DBUtility\EntityModel\UniWebEntityModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>UniWebEntityModel.edmx</DependentUpon>
       <LastGenOutput>UniWebEntityModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="EntityModel\UniWebEntityModel.tt">
+    <Content Include="DBUtility\EntityModel\UniWebEntityModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>UniWebEntityModel.edmx</DependentUpon>
       <LastGenOutput>UniWebEntityModel.cs</LastGenOutput>

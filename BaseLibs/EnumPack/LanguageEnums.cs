@@ -15,7 +15,7 @@ namespace BaseLibs.EnumPack
         French = 2,
     }
 
-    public enum PattenTypes
+    public enum PatternTypes
     {
         [Description("LangKeyRegex")]
         Regex = 1,

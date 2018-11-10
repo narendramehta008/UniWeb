@@ -1,25 +1,19 @@
-﻿using BaseLibs.EntityModel;
+﻿//using BaseLibs.EntityModel;
 using CefSharp;
 using FirstFloor.ModernUI.Presentation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading;
 using BaseLibs.Logger;
 using BaseUIUtility.ViewModel.WebTabViewModel;
 using BaseLibs.GlobalsPack;
+using BaseLibs.DBUtility.EntityModel;
 
 namespace UniWeb.View.AllWeb
 {
@@ -88,9 +82,9 @@ namespace UniWeb.View.AllWeb
         private static EmbeddedBrowser obj;
 
         public static EmbeddedBrowser GetObj()
-        {
-            return obj ?? (obj = new EmbeddedBrowser());
-        }
+            => obj ?? (obj = new EmbeddedBrowser());
+
+        
 
         private bool IsExecute(object sender) => true;
 
@@ -133,9 +127,7 @@ namespace UniWeb.View.AllWeb
             try
             {
                 if (!this.Browser.IsBrowserInitialized)
-                {
                     return;
-                }
                 Cef.UIThreadTaskFactory.StartNew(delegate
                 {
                     try
@@ -152,13 +144,9 @@ namespace UniWeb.View.AllWeb
                         if (!string.IsNullOrEmpty(ProxyIp) && !string.IsNullOrEmpty(ProxyPort))
                         {
                             var DictProxyIpPort = new Dictionary<string, object>();
-
                             DictProxyIpPort.Add("mode", "fixed_servers");
-
                             DictProxyIpPort.Add("server", "" + ProxyIp + ":" + ProxyPort + "");
-
                             string error;
-
                             bool success = requestContext.SetPreference("proxy", DictProxyIpPort, out error);
                         }
                         else
@@ -434,7 +422,6 @@ namespace UniWeb.View.AllWeb
         {
 
             private string userName;
-
             private string password;
 
             public ProxyRequestHandler(string userName, string password)

@@ -135,3 +135,13 @@ D:\Programming\Programs\GitHub Repositories\UniWeb\UniWeb\obj\x86\Debug\UniWeb.P
 D:\Programming\Programs\GitHub Repositories\UniWeb\UniWeb\obj\x86\Debug\UniWeb.csproj.GenerateResource.Cache
 D:\Programming\Programs\GitHub Repositories\UniWeb\UniWeb\obj\x86\Debug\UniWeb.exe
 D:\Programming\Programs\GitHub Repositories\UniWeb\UniWeb\obj\x86\Debug\UniWeb.pdb
+D:\Programming\Programs\GitHub Repositories\UniWeb\UniWeb\obj\x86\Debug\View\Account\AccountDetailsView.g.cs
+D:\Programming\Programs\GitHub Repositories\UniWeb\UniWeb\obj\x86\Debug\View\Account\AccountDetailsView.baml
+D:\Programming\Programs\GitHub Repositories\UniWeb\UniWeb\obj\x86\Debug\View\DemoView\DemoCustomControl.g.cs
+D:\Programming\Programs\GitHub Repositories\UniWeb\UniWeb\obj\x86\Debug\View\DemoView\DemoCustomControl.baml
+D:\Programming\Programs\GitHub Repositories\UniWeb\UniWeb\bin\x86\Debug\SQLite.CodeFirst.dll
+D:\Programming\Programs\GitHub Repositories\UniWeb\UniWeb\bin\x86\Debug\BaseLibs.dll.config
+D:\Programming\Programs\GitHub Repositories\UniWeb\UniWeb\bin\x86\Debug\BaseUIUtility.exe.config
+D:\Programming\Programs\GitHub Repositories\UniWeb\UniWeb\bin\x86\Debug\System.Data.SQLite.dll.config
+D:\Programming\Programs\GitHub Repositories\UniWeb\UniWeb\bin\x86\Debug\BaseUniWeb.dll
+D:\Programming\Programs\GitHub Repositories\UniWeb\UniWeb\bin\x86\Debug\BaseUniWeb.pdb

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="UniWebModelStoreContainer" CdmEntityContainer="UniWebEntities">
+    <EntitySetMapping Name="WebAccounts">
+      <EntityTypeMapping TypeName="UniWebModel.WebAccount">
+        <MappingFragment StoreEntitySet="WebAccounts">
+          <ScalarProperty Name="SNo" ColumnName="SNo" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="LoginStatus" ColumnName="LoginStatus" />
+          <ScalarProperty Name="LogoSource" ColumnName="LogoSource" />
+          <ScalarProperty Name="Bio" ColumnName="Bio" />
+          <ScalarProperty Name="Session" ColumnName="Session" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="ProxyIP" ColumnName="ProxyIP" />
+          <ScalarProperty Name="ProxyPort" ColumnName="ProxyPort" />
+          <ScalarProperty Name="ProxyUsername" ColumnName="ProxyUsername" />
+          <ScalarProperty Name="ProxyPassword" ColumnName="ProxyPassword" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WebHeaders">
+      <EntityTypeMapping TypeName="UniWebModel.WebHeader">
+        <MappingFragment StoreEntitySet="WebHeaders">
+          <ScalarProperty Name="SNo" ColumnName="SNo" />
+          <ScalarProperty Name="MainUrl" ColumnName="MainUrl" />
+          <ScalarProperty Name="PageUrl" ColumnName="PageUrl" />
+          <ScalarProperty Name="PageUrlFormat" ColumnName="PageUrlFormat" />
+          <ScalarProperty Name="PostData" ColumnName="PostData" />
+          <ScalarProperty Name="PostDataFormat" ColumnName="PostDataFormat" />
+          <ScalarProperty Name="HeaderType" ColumnName="HeaderType" />
+          <ScalarProperty Name="HeaderWithValues" ColumnName="HeaderWithValues" />
+          <ScalarProperty Name="Referer" ColumnName="Referer" />
+          <ScalarProperty Name="TokenFormat" ColumnName="TokenFormat" />
+          <ScalarProperty Name="RefererFormat" ColumnName="RefererFormat" />
+          <ScalarProperty Name="Token" ColumnName="Token" />
+          <ScalarProperty Name="OtherField1" ColumnName="OtherField1" />
+          <ScalarProperty Name="OtherField1Format" ColumnName="OtherField1Format" />
+          <ScalarProperty Name="OtherField2" ColumnName="OtherField2" />
+          <ScalarProperty Name="OtherField2Format" ColumnName="OtherField2Format" />
+          <ScalarProperty Name="OtherField3" ColumnName="OtherField3" />
+          <ScalarProperty Name="OtherField3Format" ColumnName="OtherField3Format" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

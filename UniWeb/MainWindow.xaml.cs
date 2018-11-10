@@ -1,6 +1,6 @@
 ﻿
 using BaseLibs.DBUtility;
-using BaseLibs.EntityModel;
+
 using BaseLibs.Logger;
 using BaseUIUtility.ViewModel.GeneralViewModel;
 using FirstFloor.ModernUI.Windows.Controls;
@@ -24,6 +24,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using UniWeb;
 using UniWeb.View.AllWeb;
+using UniWeb.View.DemoView;
 using UniWeb.View.TabContentView;
 
 namespace UniWeb
@@ -177,19 +178,19 @@ namespace UniWeb
                         MainWindowViewModel.CurrentTab = new Lazy<UserControl>(() => AllWebTabContent.GetObj());
                         break;
 
-                        //case "FacebookTab":
-                        //    mainWindowViewModel.CurrentTab = new Lazy<UserControl>(FBContentPage.getObj);
-                        //    break;
-                        //case "TwitterTab":
-                        //    GridMain.DataContext = TwitterTab.getObj();
-                        //    break;
-                        //case "PinterestTab":
-                        //    mainWindowViewModel.CurrentTab = new Lazy<UserControl>(PinContentPage.getObj);
-                        //    break;
+                    //case "FacebookTab":
+                    //    mainWindowViewModel.CurrentTab = new Lazy<UserControl>(FBContentPage.getObj);
+                    //    break;
+                    //case "TwitterTab":
+                    //    GridMain.DataContext = TwitterTab.getObj();
+                    //    break;
+                    //case "PinterestTab":
+                    //    mainWindowViewModel.CurrentTab = new Lazy<UserControl>(PinContentPage.getObj);
+                    //    break;
 
-                        //case "FileIOTab":
-                        //    mainWindowViewModel.CurrentTab = new Lazy<UserControl>(FileIOContentPage.getObj);
-                        //   break;
+                    case "DemoTab":
+                        MainWindowViewModel.CurrentTab = new Lazy<UserControl>(DemoCustomControl.GetObj);
+                        break;
 
                 }
             }

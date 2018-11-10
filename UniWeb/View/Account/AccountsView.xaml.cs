@@ -1,5 +1,6 @@
 ﻿using BaseLibs.DBUtility;
-using BaseLibs.EntityModel;
+using BaseLibs.DBUtility.EntityModel;
+//using BaseLibs.EntityModel;
 using BaseLibs.Logger;
 using BaseUIUtility.ViewModel.AccountTabViewModel;
 using System;
@@ -36,7 +37,11 @@ namespace UniWeb.View.Account
            try
             {
                 this.DataContext = AccountsViewModel;
-                AccountsViewModel.WebAccountList = new System.Collections.ObjectModel.ObservableCollection<WebAccount>(DBConnector.GetList<WebAccount>(x => true));
+                if (AccountsViewModel.WebAccountList.Count == 0)
+                {
+                    AccountsViewModel.WebAccountList = new System.Collections.ObjectModel.ObservableCollection<WebAccount>(DBConnector.GetList<WebAccount>(x => true));
+                }
+                   
             }
             catch (Exception ex)
             {
@@ -73,6 +78,11 @@ namespace UniWeb.View.Account
             {
                 Logger.Log.Error(ex.ToString());
             }
+        }
+
+        private void ButtonUserDetails_Click(object sender, RoutedEventArgs e)
+        {
+            AccountsViewModel.VisitViewDetails(sender);
         }
     }
 }

@@ -72,6 +72,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -91,13 +92,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="CustomControl\FetchDataInputBox.xaml.cs">
-      <DependentUpon>FetchDataInputBox.xaml</DependentUpon>
+    <Compile Include="CustomControl\FetchDataInputBoxView.xaml.cs">
+      <DependentUpon>FetchDataInputBoxView.xaml</DependentUpon>
     </Compile>
     <Compile Include="ResourceStyle\ResourceHandler.cs" />
     <Compile Include="ViewModel\AccountTabViewModel\AccountsViewModel.cs" />
-    <Compile Include="ViewModel\CustomControl\FetchDataInputBoxViewModel.cs" />
+    <Compile Include="ViewModel\CustomControl\FetchDataInputBoxModel.cs" />
     <Compile Include="ViewModel\DemoViewModel\DemoRegexViewModel.cs" />
+    <Compile Include="ViewModel\DemoViewModel\DemoViewModel.cs" />
     <Compile Include="ViewModel\GeneralViewModel\BindingObject.cs" />
     <Compile Include="ViewModel\WebTabViewModel\EmbeddeBrowserViewModel.cs" />
     <Compile Include="ViewModel\GeneralViewModel\MainWindowViewModel.cs" />
@@ -105,7 +107,7 @@
     <Compile Include="ViewModel\TabContentViewModel\AccountTabContentViewModel.cs" />
     <Compile Include="ViewModel\TabContentViewModel\AllWebTabContentViewModel.cs" />
     <Compile Include="ViewModel\WebTabViewModel\FetchDataViewModel.cs" />
-    <Page Include="CustomControl\FetchDataInputBox.xaml">
+    <Page Include="CustomControl\FetchDataInputBoxView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -170,7 +172,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="CustomModelClasses\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BaseLibs\BaseLibs.csproj">
       <Project>{74B32E94-09BF-4D76-B053-6E2103687F6B}</Project>
